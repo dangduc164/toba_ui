@@ -1,0 +1,25 @@
+.c-btn {
+    a {
+        padding: 20px 75px;
+        max-width: 100%;
+        color: #fff;
+        background: $cAccent;
+        border-radius: 32px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        &:hover {
+            color: #fff;
+        }
+        @include br1179 {
+            padding: 4px 19px 7px;
+            font-size: 14px;
+            line-height: 17px;
+            font-weight: 400;
+        }
+    }
+    &--center {
+        text-align: center;
+    }
+}

@@ -1,0 +1,103 @@
+.c-contact-ct {
+    padding-bottom: 16px;
+    .l-container {
+        width: 1220px;
+    }
+    h3 {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+        color: #68BF44;
+        text-align: center;
+        margin-top: 55px;
+        margin-bottom: 108px;
+        @include br747 {
+            font-size: 24px;
+            line-height: 29px;
+            text-align: left;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 21px;
+            margin-top: 0;
+        }
+    }
+    &__box {
+        display: flex;
+        @include br747 {
+            flex-wrap: wrap;
+        }
+        &__detail {
+            width: 388px;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            margin-bottom: 128px;
+            img {
+                height: 64px;
+            }
+            h4 {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 29px;
+                color: #68BF44;
+                margin-top: 23px;
+                margin-bottom: 65px;
+            }
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 25px;
+                letter-spacing: 0.01em;
+                color: #2B3227;
+                opacity: 0.68;
+                text-align: center;
+            }
+            &:nth-child(2) {
+                border-left: 3px solid #68BF44;
+                border-right: 3px solid #68BF44;
+                padding-left: 23.27px;
+                padding-right: 23.27px;
+            }
+            @include br747 {
+                flex: 100%;
+                max-width: 100%;
+                &:nth-child(2) {
+                    border: none;
+                    padding: 0;
+                }
+                h4 {
+                    display: none;
+                }
+                P {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+    &__info {
+        >ul {
+            >li {
+                margin-bottom: 16px;
+                p {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 8px;
+                    .icon {
+                        flex: 22px;
+                        max-width: 22px;
+                    }
+                    .desc {
+                        flex: calc(100% - 22px);
+                        max-width: calc(100% - 22px);
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #40493B;
+                    }
+                }
+            }
+        }
+    }
+}

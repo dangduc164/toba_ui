@@ -1,0 +1,211 @@
+.c-contact-us {
+    background: #F2FCEC;
+    padding: 70px 0;
+    @include br747 {
+        background-color: #fff;
+        padding: 47px 0;
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 86px;
+        @include br747 {
+            flex-direction: column-reverse;
+            gap: 29px;
+            margin-left: -16px;
+            margin-right: -16px;
+        }
+        &__left {
+            flex: calc(47% - 43px);
+            max-width: calc(47% - 43px);
+            background: $cBase;
+            @include br747 {
+                flex: 100%;
+                max-width: 100%;
+                padding: 12px 16px 0px;
+            }
+            &-content {
+                padding: 32px 46px 36px;
+                @include br1179 {
+                    padding: 18px 15px 22px;
+                }
+                @include br747 {
+                    padding: 21px 0px 22px;
+                }
+                h3 {
+                    font-weight: 700;
+                    font-size: 48px;
+                    line-height: 58px;
+                    color: #fff;
+                    margin-bottom: 34px;
+                    @include br1179 {
+                        font-size: 24px;
+                        line-height: 29px;
+                    }
+                    @include br747 {
+                        margin-bottom: 21px;
+                    }
+                }
+                ul {
+                    >li {
+                        >p {
+                            width: 399px;
+                            max-width: 100%;
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-items: flex-start;
+                            gap: 16px;
+                            @include br1179 {
+                                gap: 8px;
+                            }
+                            .icon {
+                                flex: 32px;
+                                max-width: 32px;
+                                @include br1179 {
+                                    flex: 22px;
+                                    max-width: 22px;
+                                    height: 22px;
+                                    img {
+                                        width: 22px;
+                                        height: 22px;
+                                        object-fit: cover;
+                                    }
+                                }
+                            }
+                            .desc {
+                                flex: calc(100% - 48px);
+                                max-width: calc(100% - 48px);
+                                line-height: 26px;
+                                color: #fff;
+                                @include br1179 {
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                }
+                                @include br747 {
+                                    max-width: 100%;
+                                }
+                            }
+                        }
+                        +li {
+                            margin-top: 32px;
+                            @include br747 {
+                                margin-top: 16px;
+                            }
+                            >p {
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__right {
+            padding-top: 16px;
+            flex: calc(53% - 43px);
+            max-width: calc(53% - 43px);
+            @include br747 {
+                flex: 100%;
+                max-width: 100%;
+                padding: 0 16px;
+            }
+            h3 {
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 58px;
+                color: $cBase;
+                margin-bottom: 24px;
+                @include br1179 {
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+                @include br747 {
+                    text-align: center;
+                    margin-bottom: 8px;
+                }
+            }
+            p {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 32px;
+                margin-bottom: 32px;
+                @include br1179 {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+                @include br747 {
+                    text-align: center;
+                    margin-bottom: 37px;
+                }
+            }
+            form {
+                input,
+                textarea {
+                    width: 610px;
+                    max-width: 100%;
+                    height: 68px;
+                    padding: 0 23px;
+                    border: none;
+                    background: #F9FFF5;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 32px;
+                    &::placeholder {
+                        color: #B7C4B0;
+                    }
+                    @include br1179 {
+                        height: 42px;
+                        font-size: 14px;
+                        line-height: 20px;
+                        padding: 0 16px;
+                    }
+                    @include br747 {
+                        background: rgba($color: $cBase, $alpha: 0.05);
+                        border-radius: 4px;
+                        color: $cBase;
+                        &::placeholder {
+                            color: $cBase;
+                        }
+                    }
+                }
+                textarea {
+                    height: 121px;
+                    padding: 19px;
+                    @include br1179 {
+                        padding: 10px 16px;
+                    }
+                    @include br747 {
+                        height: 80px;
+                    }
+                }
+            }
+        }
+    }
+    &__form {
+        margin-bottom: 16px;
+        button {
+            margin-top: 5px;
+            width: 610px;
+            max-width: 100%;
+            border: none;
+            padding: 20px;
+            font-size: 20px;
+            line-height: 24px;
+            color: #fff;
+            background-color: $cBase;
+            @include br1179 {
+                padding: 12px;
+                font-size: 14px;
+                line-height: 17px;
+            }
+            @include br747 {
+                border-radius: 4px;
+                margin-top: 0;
+            }
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+}

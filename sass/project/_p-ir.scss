@@ -1,0 +1,348 @@
+.p-irqa {
+    margin-top: 65px;
+    &__ir {
+        &__inner {
+            h2 {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 40px;
+                line-height: 48px;
+                color: #288600;
+                display: inline-block;
+                padding-bottom: 22px;
+                position: relative;
+                &::after {
+                    content: "";
+                    width: 48px;
+                    height: 4px;
+                    background-color: #68BF44;
+                    position: absolute;
+                    border-radius: 54px;
+                    left: 0;
+                    right: 0;
+                    border: -22px;
+                    bottom: 0px;
+                }
+            }
+            p {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 24px;
+                color: #576351;
+                margin-top: 16px;
+                margin-bottom: 24px;
+            }
+            ul {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-bottom: 56px;
+                flex-wrap: wrap;
+                gap: 8px;
+                li {
+                    background: #B7C4B0;
+                    a {
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: #FFFFFF;
+                        padding: 20px 24px;
+                    }
+                }
+                li:hover {
+                    background: #288600;
+                }
+            }
+        }
+        &__notify {
+            &-box {
+                padding-bottom: calc(68px - 24px);
+                margin-bottom: 100px;
+            }
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 24px;
+        }
+        &__image {
+            margin-right: 12px;
+            position: relative;
+            &::before {
+                content: "Mới";
+                width: 34px;
+                padding: 2px 5px;
+                color: white;
+                background-color: #FF3E3E;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            img {
+                width: 94px;
+                height: auto;
+                object-fit: contain;
+                border-radius: 4px;
+            }
+        }
+        &__detail {
+            h4 {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 28px;
+                color: #40493B;
+                padding-left: 8px;
+                border-left: 6px solid #B8BD22;
+                display: flex;
+                p {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 42px;
+                    color: #C6C6C6;
+                    margin-bottom: 0;
+                    margin-top: -7px;
+                }
+            }
+            a {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                text-decoration-line: underline;
+                color: #40493B;
+            }
+        }
+    }
+    &__qa {
+        padding-bottom: 126px;
+        &__heading {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 48px;
+            color: #288600;
+            margin-bottom: 22px;
+            position: relative;
+            &::after {
+                content: "";
+                width: 48px;
+                height: 4px;
+                background: #68BF44;
+                border-radius: 52px;
+                position: absolute;
+                left: 0;
+                bottom: -22px;
+            }
+        }
+        &__search {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 16px;
+            padding-bottom: 46px;
+            p {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 24px;
+                color: #576351;
+            }
+            &__inner {
+                width: calc(345px + 24px);
+                max-width: 100%;
+                padding-left: 12px;
+                padding-right: 12px;
+                input {
+                    width: 100%;
+                    padding: 9px 25px;
+                    padding-left: 54px;
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #2B3227;
+                    outline: none;
+                    border: none;
+                    background: #EEEEEE;
+                    border-radius: 21px;
+                }
+            }
+            &__icn {
+                position: relative;
+                img {
+                    position: absolute;
+                    top: 12px;
+                    left: 20px;
+                    width: 20px;
+                }
+            }
+        }
+        .accordion-button::after {
+            transform: rotate(0deg);
+            background-image: url("./../../assets/img/ir-qa/icn_qa_next.svg");
+            background-size: contain;
+        }
+        .accordion-button:not(.collapsed)::after {
+            transform: rotate(90deg);
+        }
+        .accordion-item {
+            background-color: #fff;
+            margin-bottom: 16px;
+            border: none;
+        }
+        .accordion-button {
+            background-color: #F2FCEC;
+        }
+        button {
+            font-family: 'MarketSans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+            color: #2B3227 !important;
+        }
+        .accordion-button:focus {
+            box-shadow: unset;
+        }
+    }
+    &__active {
+        background-color: #288600 !important;
+    }
+}
+@media screen and (max-width: 576px) {
+    .p-irqa {
+        margin-top: 10px;
+        &__ir {
+            &__inner {
+                h2 {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 19px;
+                    padding-bottom: 10px;
+                    &::after {
+                        width: 21px;
+                        height: 2px;
+                    }
+                }
+                p {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    margin-top: 10px;
+                    margin-bottom: 18px;
+                }
+                ul {
+                    margin-bottom: 33px;
+                    flex-wrap: nowrap;
+                    gap: 4px;
+                    margin-right: -16px;
+                    li {
+                        background: #B7C4B0;
+                        width: 42px;
+                        a {
+                            font-size: 12px;
+                            line-height: 15px;
+                            padding: 10px 6px;
+                        }
+                    }
+                    li:hover {
+                        background: #288600;
+                    }
+                }
+            }
+            &__detail {
+                h4 {
+                    font-size: 14px;
+                    line-height: 17px;
+                    margin-bottom: 9px;
+                    p {
+                        font-size: 12px;
+                        line-height: 18px;
+                        margin-top: 0px;
+                    }
+                }
+                a {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+            &__notify-box {
+                padding-bottom: 0;
+                margin-bottom: 38px;
+            }
+            &__notify {
+                margin-bottom: 13px;
+            }
+            &__image:before {
+                height: 20px;
+                border-radius: 4px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
+        &__qa {
+            padding-bottom: 48px;
+            &__heading {
+                font-size: 16px;
+                line-height: 19px;
+                margin-bottom: 8px;
+                &::after {
+                    width: 21px;
+                    height: 2px;
+                    bottom: -10px;
+                }
+            }
+            &__search {
+                flex-direction: column;
+                padding-bottom: 48px;
+                align-items: flex-start;
+                p {
+                    margin-bottom: 32px;
+                    margin-top: -3px;
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+                &__inner {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+            .accordion-button {
+                padding: 10px 55px 10px 10px;
+            }
+            .accordion-button::after {
+                height: 14px;
+                position: absolute;
+                right: 6px;
+                top: 11px;
+            }
+            .accordion-item {
+                margin-bottom: 8px;
+                margin-right: 0px;
+            }
+            button {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+    }
+}

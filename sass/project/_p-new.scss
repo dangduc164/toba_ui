@@ -1,0 +1,231 @@
+.p-new {
+    margin-top: 51px;
+    padding-bottom: 81px;
+    .c-title {
+        h3 {
+            font-size: 40px;
+            line-height: 48px;
+            color: $textColor;
+            font-weight: 800;
+            &::after {
+                background-color: $textColor;
+                width: 48px;
+                height: 4px;
+                border-radius: 52px;
+            }
+        }
+    }
+    &__intro {
+        padding: 16px 0 62px;
+        p {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+    &__hot {
+        padding-bottom: 30px;
+        .row {
+            margin: 0 -15px;
+        }
+        &__big {
+            padding: 0 15px;
+            margin-bottom: 12px;
+            &__box {
+                position: relative;
+                &-image {}
+                &-content {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    background: rgba(18, 18, 18, 0.4);
+                    backdrop-filter: blur(2px);
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-between;
+                    padding: 42px 120px 42px 59px;
+                    p {
+                        width: 693px;
+                        max-width: 100%;
+                        color: #fff;
+                        font-weight: 800;
+                        font-size: 32px;
+                        line-height: 52px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        max-height: 152px;
+                    }
+                    a {
+                        font-family: $font-family-open;
+                        font-weight: 600;
+                        font-size: 24px;
+                        color: #fff;
+                        line-height: 24px;
+                        border: 1px solid #FFFFFF;
+                        border-radius: 250px;
+                        padding: 17px 83px;
+                    }
+                }
+            }
+        }
+        &__item {
+            padding: 0 15px;
+            &__box {
+                &-image {
+                    margin-bottom: 6px;
+                }
+                &-content {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    p {
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 32px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        max-height: 101px;
+                    }
+                }
+            }
+        }
+    }
+    &__group-new {
+        margin-top: 36px;
+        overflow: hidden;
+        &__handle {
+            width: 100%;
+            min-width: 1363px;
+            overflow-x: auto;
+            >ul {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 8px;
+                width: 1386px;
+                overflow-x: auto;
+                @include br1179 {
+                    min-width: 1490px;
+                    gap: 4px;
+                }
+                >li {
+                    padding: 10px 0;
+                    &.active {
+                        a {
+                            background: #288600;
+                        }
+                    }
+                    >a {
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 22px;
+                        padding: 21px;
+                        background: #B7C4B0;
+                        color: #FFFFFF;
+                        text-transform: uppercase;
+                        @include br1179 {
+                            font-size: 12px;
+                            line-height: 15px;
+                            padding: 6px 10px;
+                        }
+                    }
+                }
+            }
+        }
+        &__main {
+            padding: 31px 0;
+        }
+        .row {
+            margin: 0 -15px;
+            @include br1179 {
+                margin: 0 -8px;
+            }
+            .all {
+                padding: 15px;
+                @include br1179 {
+                    padding: 8px;
+                }
+            }
+        }
+        &__box {
+            background: #FFFFFF;
+            box-shadow: 0px 8px 19px rgba(189, 189, 189, 0.25);
+            border-radius: 8px;
+            &-image {
+                position: relative;
+                overflow: hidden;
+                &::after {
+                    content: '';
+                    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+                    border-radius: 8px 8px 0px 0px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                }
+                &::before {
+                    content: url('../img/common/icn_ytb.svg');
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 2;
+                }
+            }
+            &-content {
+                padding: 20px 18px 15px;
+                .name {
+                    font-weight: 800;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $cAccent;
+                    margin-bottom: 6px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .desc {
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 800;
+                    margin-bottom: 18px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-width: 288px;
+                }
+                .date {
+                    color: #C6C6C6;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+                @include br1179{
+                    padding: 5px 6px;
+                    .name{
+                        font-size: 12px;
+                        line-height: 20px;
+                        max-width: 252px;
+                    }
+                    .desc{
+                        font-size: 12px;
+                        line-height: 20px;
+                    }
+                    .date{
+                        font-size: 12px;
+                        line-height: 15px;
+                    }
+                }
+                @include br747{
+                    .name{
+
+                        max-width: 152px;
+                    }
+                }
+            }
+        }
+    }
+}

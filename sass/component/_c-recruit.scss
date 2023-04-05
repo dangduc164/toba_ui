@@ -1,0 +1,78 @@
+.c-recruit {
+    position: relative;
+    padding: 100px 0;
+    @include br1179 {
+        padding: 50px 0;
+    }
+    @include br747 {
+        padding: 0 0 20px;
+    }
+    &::after {
+        content: url('../img/common/img_bg_recruit.png');
+        position: absolute;
+        right: 0;
+        top: 0;
+        @include br1179 {
+            display: none;
+        }
+    }
+    .c-title {
+        h3 {
+            color: #288600;
+            font-size: 40px;
+            line-height: 56px;
+            @include br1179 {
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+        p {
+            text-align: center;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+            margin-top: 22px;
+            @include br1179 {
+                font-size: 12px;
+                line-height: 20px;
+                letter-spacing: -0.02em;
+                margin-top: 11px;
+            }
+        }
+    }
+    &__content {
+        margin-top: 39px;
+        @include br1179 {
+            margin-top: 25px;
+        }
+        h2 {
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 96px;
+            text-align: center;
+            color: $cBase;
+            @include br1179 {
+                font-size: 22px;
+                line-height: 36px;
+                letter-spacing: -0.01em;
+            }
+        }
+    }
+    .btn-apply {
+        margin-top: 65px;
+        @include br1179 {
+            margin-top: 30px;
+        }
+        a {
+            font-size: 24px;
+            line-height: 24px;
+            @include br1179 {
+                font-size: 14px;
+                line-height: 17px;
+                padding: 8px 24px 11px;
+            }
+        }
+    }
+}

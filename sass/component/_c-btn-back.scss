@@ -1,0 +1,19 @@
+.c-btn-back {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    span {
+        margin-left: 17px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    @include br1179 {
+        svg {
+            width: 14.67px;
+        }
+        span {
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+}
